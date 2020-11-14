@@ -13,3 +13,15 @@
     box-sizing: border-box;
     outline: none;
 }
+
+.justify-center {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    width: 101rem;
+    margin: 0rem 4rem;
+}
+ 
