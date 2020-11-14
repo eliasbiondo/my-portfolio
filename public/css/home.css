@@ -1,0 +1,92 @@
+body {
+    width: 100%;
+    min-height: 100vh;
+}
+
+.main-menu {
+    width: 100%;
+    height: 15rem;
+    display: flex;
+    justify-content: center;
+}
+
+    .main-menu .container {
+        width: 101rem;
+        height: 15rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+        .main-menu .container .logo {
+            width: 20rem;
+            display: flex;
+            justify-content: space-between;
+
+            transition: color 200ms linear;
+            transition: transform 200ms linear;
+        }
+
+        .main-menu .container .logo:hover {
+            color: var(--primary);
+            transform: scale(1.20);
+        }
+
+            .main-menu .container img {
+                width: 7.2rem;
+            }
+
+            .main-menu .container .logo h1 {
+                font-size: 3.6rem;
+                font-weight: bold;
+                line-height: 3.6rem;
+                color: inherit;
+            }
+
+        .main-menu .container .menu-navigation ul {
+            width: 29rem;
+            display: flex;
+            justify-content: space-between;
+        }
+
+            .main-menu .container .menu-navigation ul li {
+                font-size: 2.3rem;
+                font-weight: 700;
+
+                transition: color 200ms linear;
+                transition: transform 200ms linear;
+            }
+
+            .main-menu .container .menu-navigation ul li:hover {
+                color: var(--primary);
+                transform: scale(1.20)
+            }
+
+            .main-menu .container .menu-navigation ul li.active {
+                color: var(--primary);
+            }
+
+        .main-menu .container .contact-me-btn {
+            width: 23rem;
+            height: 5rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 2.4rem;
+            font-weight: 600;
+            color: var(--primary);
+            background-color: white;
+            border: 2px solid var(--primary);
+            border-radius: 30px;
+            cursor: pointer;
+
+            transition: color 200ms linear;
+            transition: background-color 200ms linear;
+            transition: transform 200ms linear;
+        }
+
+        .main-menu .container .contact-me-btn:hover {
+            color: white;
+            background-color: var(--primary);
+            transform: scale(1.15);
+        }
