@@ -290,3 +290,77 @@ body {
                 text-align: center;
                 line-height: 2.4rem;
             }
+
+.some-projects-section {
+    margin-top: 6rem;
+    background: url(../images/right-project-image-bg.svg) no-repeat right 4%, url(../images/left-project-image-bg.svg) no-repeat left 88%;
+}
+
+    .some-projects-section .container h2 {
+        font-size: 5.6rem;
+        font-weight: bold;
+        line-height: 6.5rem;
+    }
+
+        .some-projects-section .container h2 span {
+            color: var(--primary);
+        }
+
+        .some-projects-section .container .text {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            text-align: right;
+            position: relative;
+        }
+
+        .some-projects-section .container .text:nth-child(even) {
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: flex-start;
+            text-align: left;
+        }
+
+        .some-projects-section .container .text p {
+            margin-right: 10rem;
+        }
+
+        .some-projects-section .container .text:nth-child(even) p {
+            margin-right: 0;
+            margin-left: 10rem;
+        }
+
+        .some-projects-section .container .text img {
+            position: absolute;
+            right: -10rem;
+        }
+
+        .some-projects-section .container .text:nth-child(even) img {
+            position: absolute;
+            left: -10rem;
+        }
+
+        .text:first-child {
+            margin-top: 5.5rem;
+        }
+
+        .text:last-child {
+            margin-bottom: 18rem;
+        }
+
+        .text + .text {
+            margin-top: 19.5rem;
+        }
+
+            .some-projects-section .container .texts .text p {
+                width: 35rem;
+                font-size: 2.4rem;
+                font-weight: normal;
+                line-height: 3.3rem;
+                text-align: inherit;
+            }
+
+                .some-projects-section .container .texts .text p span {
+                    font-weight: bold;
+                    color: var(--primary);
+                }
