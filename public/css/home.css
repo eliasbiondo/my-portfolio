@@ -364,3 +364,134 @@ body {
                     font-weight: bold;
                     color: var(--primary);
                 }
+
+.send-me-a-message-section {
+    margin-top: 10rem;
+    margin-bottom: 14rem;
+}
+
+    .send-me-a-message-section .container {
+        background: url(../images/contact-form-bg.svg) no-repeat right 60%;
+        background-size: clamp(32.5rem, 35vw, 50rem);
+    }
+
+    .send-me-a-message-section .container h2 {
+        font-size: 5rem;
+        font-weight: bold;
+        line-height: 6.5rem;
+        margin-bottom: 3rem;
+    }
+
+        .send-me-a-message-section .container h2 span {
+            color: var(--primary);
+        }
+
+    .send-me-a-message-section .container form label,
+    .send-me-a-message-section .container form textarea {
+        display: block;
+        margin: 1.4rem 0rem 1rem 0rem;
+        font-size: 1.8rem;
+        font-weight: 200;
+        line-height: 2.5rem;
+        cursor: pointer;
+    }
+
+    .send-me-a-message-section .container form input, 
+    .send-me-a-message-section .container form textarea,
+    .send-me-a-message-section .container form button {
+        width: 45rem;
+        height: 5rem;
+        font-size: 1.8rem;
+        font-weight: 200;
+        line-height: 2.5rem;
+        padding: 0rem 2.5rem;
+        border: 1px solid #000;
+        border-radius: 4rem;
+        outline: none;
+    }
+
+    .send-me-a-message-section .container form textarea {
+        height: 20rem;
+        margin-bottom: 3rem;
+        resize: none;
+    }
+
+    .send-me-a-message-section .container form button {
+        height: 6.4rem;
+        font-size: 2.4rem;
+        font-weight: 400;
+        line-height: 2rem;
+        color: white;
+        background-color: var(--primary);
+        border: none;
+        outline: none;
+    }
+
+    .send-me-a-message-section .container form button:hover {
+        background-color: var(--primary-hover);
+        cursor: pointer;
+    }
+
+.footer-section {
+    margin-top: 1rem;
+    margin-bottom: 7.2rem;
+}
+
+    .footer-section .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+
+        .footer-section .container .logo {
+            width: 20rem;
+            display: flex;
+            justify-content: space-between;
+
+            transition: color 200ms linear;
+            transition: transform 200ms linear;
+        }
+
+        .footer-section .container .logo:hover {
+            transform: scale(1.20);
+        }
+
+            .footer-section .container .logo img {
+                width: 7.2rem;
+            }
+
+            .footer-section .container .logo h1 {
+                font-size: 3.6rem;
+                font-weight: bold;
+                line-height: 3.6rem;
+                color: inherit;
+            }
+
+        .footer-section .container .footer-final-box {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            margin-top: 2rem;
+        }
+
+            .footer-section .container .footer-final-box p {
+                font-size: 2.4rem;
+                font-weight: 200;
+                line-height: 3.6rem;
+            }
+
+            .footer-section .container .footer-final-box .social-icons {
+                width: 12rem;
+                display: flex;
+                justify-content: space-between;
+            }
+
+                .footer-section .container .footer-final-box .social-icons a {
+                    transition: transform 200ms linear;
+                }
+
+                .footer-section .container .footer-final-box .social-icons a:hover {
+                    transform: scale(1.20);
+                }

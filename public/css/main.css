@@ -1,6 +1,7 @@
 :root {
     font-size: 62.5%;
     --primary: #FF3233;
+    --primary-hover: #db2c2c;
 }
 
 * {
