@@ -131,7 +131,7 @@ body {
 
 .readme-section {
     height: auto;
-    margin: 8rem 0rem;
+    margin: 8rem 0rem 2rem 0rem;
 }
 
     .readme-section .container {
@@ -161,3 +161,132 @@ body {
             font-weight: normal;
             line-height: 5.7rem;
         }
+
+.my-stacks-section {
+    height: clamp(112rem, 78vw, 500rem);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(../images/my-stacks-waves.svg) no-repeat center;
+    background-size: cover;
+}
+
+    .my-stacks-section .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        height: 100%;
+    }
+
+        .my-stacks-section .container .section-title h2 {
+            color: white;
+            font-size: 7.2rem;
+            font-weight: bold;
+            line-height: 9.8rem;
+            margin-top: clamp(30rem, 20vw, 80rem);
+        }
+
+        .my-stacks-section .container .stacks-section ul {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            max-height: 31rem;
+            flex-wrap: wrap;
+            margin-top: 5rem;
+        }
+
+            .my-stacks-section .container .stacks-section ul li {
+                font-size: 5.6rem;
+                font-weight: bold;
+                line-height: 7.6rem;
+                margin-right: 5rem;
+                color: white;
+            }
+
+                .my-stacks-section .container .stacks-section ul li img {
+                    margin-right: 2.5rem;
+                }
+
+                    .green-elipse {
+                        filter: invert(79%) sepia(20%) saturate(6942%) hue-rotate(47deg) brightness(108%) contrast(106%);
+                    }
+
+                    .blue-elipse {
+                        filter: invert(34%) sepia(94%) saturate(1948%) hue-rotate(192deg) brightness(98%) contrast(113%);
+                    }
+
+                    .red-elipse {
+                        filter: invert(31%) sepia(52%) saturate(4089%) hue-rotate(341deg) brightness(100%) contrast(105%);
+                    }
+
+            .my-stacks-section .container .red-line {
+                margin-top: 5rem;
+            }
+
+            .my-stacks-section .container .stacks-caption {
+                margin-top: 5rem;
+            }
+
+            .my-stacks-section .container .stacks-caption ul li {
+                font-size: 3.6rem;
+                font-weight: bold;
+                line-height: 4.9rem;
+                color: white;
+            }
+
+.main-services-section {
+    margin-top: 12rem;
+}
+
+
+    .main-services-section .container h2 {
+        font-size: 5.6rem;
+        font-weight: bold;
+        line-height: 6.5rem;
+    }
+
+        .main-services-section .container h2 span {
+            color: var(--primary);
+        }
+
+    .main-services-section .container .cards-set {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 4rem 0rem 8rem 0rem;
+    }
+
+        .main-services-section .container .cards-set .card {
+            width: 30.5rem;
+            height: 41.5rem;
+            display: flex;
+            flex-direction: column;
+            border: 0.2rem solid #000;
+            border-radius: 3.5rem;
+        }
+
+            .main-services-section .container .cards-set .card .card-image {
+                width: 100%;
+                height: 33rem;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .main-services-section .container .cards-set .card .card-description {
+                width: 100%;
+                height: 8.5rem;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: white;
+                background-color: var(--primary);
+                border-radius: 0px 0px 33px 33px;
+
+                font-size: 2.4rem;
+                font-weight: bold;
+                text-align: center;
+                line-height: 2.4rem;
+            }
