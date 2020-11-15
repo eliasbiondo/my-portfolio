@@ -4,7 +4,7 @@ body {
 }
 
 .main-menu {
-    height: 15rem;
+    height: auto;
 }
 
     .main-menu .container {
@@ -128,3 +128,36 @@ body {
             .banner-section .container header a img:hover {
                 filter: invert(33%) sepia(51%) saturate(6924%) hue-rotate(341deg) brightness(99%) contrast(110%);
             }
+
+.readme-section {
+    height: auto;
+    margin: 8rem 0rem;
+}
+
+    .readme-section .container {
+        height: 62rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-end;
+        background: url(../images/readme-bg.svg) no-repeat left;
+        background-size: clamp(32.5rem, 35vw, 50rem);
+        text-align: end;
+    }
+
+        .readme-section .container h2 {
+            font-size: 5.6rem;
+            font-weight: bold;
+            line-height: 6.5rem;
+        }
+
+            .readme-section .container h2 span {
+                color: var(--primary);
+            }
+
+        .readme-section .container p {
+            width: 40rem;
+            font-size: 4.2rem;
+            font-weight: normal;
+            line-height: 5.7rem;
+        }
