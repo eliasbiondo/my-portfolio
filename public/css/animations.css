@@ -1,0 +1,7 @@
+.first-line-mobile-menu-rotation {
+    transform: rotate3d(0, 0, 1, 45deg);
+}
+
+.second-line-mobile-menu-rotation {
+    transform: rotate3d(0, 0, 1, -45deg);
+}

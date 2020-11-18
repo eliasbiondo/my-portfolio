@@ -25,3 +25,8 @@
     width: 101rem;
     margin: 0rem 4rem;
 }
+
+.stop-scrolling {
+    height: 100%;
+    overflow: hidden;
+  }
