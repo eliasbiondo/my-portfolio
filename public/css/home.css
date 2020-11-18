@@ -87,6 +87,10 @@ body {
             transform: scale(1.15);
         }
 
+        .main-menu .container .mobile-navbar {
+            display: none;
+        }
+
 .banner-section {
     height: auto;
     margin: clamp(.5rem, 2.5vw, 8rem) 0rem;
@@ -98,11 +102,16 @@ body {
         align-items: center;
         background: url(../images/banner-bg.svg) no-repeat right;
         background-size: clamp(32.5rem, 35vw, 50rem);
+        padding: 2rem 0rem;
     }
 
         .banner-section .container header {
             width: clamp(30rem, 40vw, 51rem);
         }
+
+            .banner-section .container header img {
+                display: none;
+            }
 
             .banner-section .container header h1 {
                 font-size: clamp(4.0rem, 5vw, 5.6rem);
@@ -144,6 +153,10 @@ body {
         background-size: clamp(32.5rem, 35vw, 50rem);
         text-align: end;
     }
+
+        .readme-section .container img {
+            display: none;
+        }
 
         .readme-section .container h2 {
             font-size: clamp(4.0rem, 5vw, 5.6rem);
@@ -386,16 +399,20 @@ body {
         background-size: clamp(28rem, 35vw, 50rem);
     }
 
-    .send-me-a-message-section .container h2 {
-        font-size: clamp(3.5rem, 5vw, 5.0rem);
-        font-weight: bold;
-        line-height: 6.5rem;
-        margin-bottom: 3rem;
-    }
+        .send-me-a-message-section .container img {
+            display: none;
+        } 
 
-        .send-me-a-message-section .container h2 span {
-            color: var(--primary);
+        .send-me-a-message-section .container h2 {
+            font-size: clamp(3.5rem, 5vw, 5.0rem);
+            font-weight: bold;
+            line-height: 6.5rem;
+            margin-bottom: 3rem;
         }
+
+            .send-me-a-message-section .container h2 span {
+                color: var(--primary);
+            }
 
     .send-me-a-message-section .container form label,
     .send-me-a-message-section .container form textarea {
@@ -557,4 +574,221 @@ body {
     .send-me-a-message-section {
         margin-top: 5rem;
     }
+}
+
+/* Mobile Version */
+
+@media only screen and (max-width: 719px) {
+    .main-menu .container .menu-navigation {
+        display: none;
+    }
+
+    .main-menu .container .contact-me-btn {
+        display: none;
+    }
+
+    .main-menu .container .mobile-navbar {
+        display: flex;
+        flex-direction: column;
+        cursor: pointer;
+    }
+
+    .mobile-navbar .nav-line {
+        width: 5rem;
+        height: 0.1rem;
+        background-color: #000;
+    }
+
+    .mobile-navbar .nav-line + .nav-line {
+        margin-top: 1.5rem;
+    }
+
+.banner-section {
+    height: auto;
+}
+
+    .banner-section .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: none;
+        background-size: none;
+    }
+
+    .banner-section .container header {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+        .banner-section .container header img {
+            display: flex;
+            width: 100%;
+            margin-bottom: 2rem;
+        }
+
+        .banner-section .container header h1 {
+            text-align: center;
+        }
+
+        .banner-section .container header p {
+            text-align: center;
+            margin-top: 1.2rem;
+        }
+
+.readme-section {
+    height: clamp(50rem, 140vw, 100rem);
+    display: flex;
+    align-items: center;
+    margin: clamp(5rem, -15vw, 20rem) 0 0 0;
+}
+
+    .readme-section .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: none;
+    }
+
+        .readme-section .container img {
+            display: flex;
+            width: 100%;
+            margin-bottom: 2rem;
+        }
+
+        .readme-section .container h1 {
+            text-align: center;
+        }
+
+        .readme-section .container p {
+            text-align: center;
+            margin-top: 1.2rem;
+        }
+
+.my-stacks-section {
+    height: clamp(180rem, 78vw, 500rem);
+}
+
+    .my-stacks-section .container {
+        width: 100vw;
+        align-items: center;
+    }
+
+        .my-stacks-section .container .section-title h2 {
+            margin-top: 40rem;
+            margin-left: 2rem;
+            text-align: center;
+        }
+
+        .my-stacks-section .container .stacks-section ul {
+            max-height: 80rem;
+            margin-left: 2rem;
+        }
+
+            .my-stacks-section .container .stacks-section ul li {
+                font-size: clamp(2.5rem, 4.5vw, 7.0rem);
+                line-height: clamp(4rem, 9vw, 5.5rem);
+            }
+
+                .my-stacks-section .container .stacks-section ul li img {
+                    margin-right: clamp(2.5rem, 1vw, 3rem);
+                }
+
+            .my-stacks-section .container .red-line {
+                width: 20rem;
+                margin-left: 2rem;
+            }
+
+            .my-stacks-section .container .stacks-caption {
+                margin-left: 2rem;
+            }
+
+.main-services-section .container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+    .main-services-section .container h2 {
+        text-align: center;
+        line-height: clamp(4.0rem, 5vw, 5.6rem);
+    }
+
+    .main-services-section .container .cards-set {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .main-services-section .container .cards-set .card {
+        width: clamp(25rem, 25vw, 30.5rem);
+        height: clamp(35rem, 36vw, 41.5rem);
+    }
+
+        .main-services-section .container .cards-set .card .card-image img {
+            width: clamp(23rem, 20vw, 24rem);
+        }
+
+    .card + .card {
+        margin-top: 4rem;
+    }
+
+.some-projects-section .container h2 {
+    font-size: clamp(4.0rem, 5vw, 5.6rem);
+    line-height: clamp(3.5rem, 5vw, 5.0rem);
+    text-align: center;
+}
+
+    .some-projects-section .container .texts .text p {
+        text-align: center;
+    }
+
+.send-me-a-message-section .container {
+    background: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+    .send-me-a-message-section .container h2 {
+        text-align: center;
+        line-height: clamp(3.5rem, 5vw, 5.0rem);
+    }
+
+    .send-me-a-message-section .container img {
+        display: flex;
+        width: 100%;
+        margin-top: 8rem;
+    }
+
+    .send-me-a-message-section .container form input, 
+    .send-me-a-message-section .container form textarea, 
+    .send-me-a-message-section .container form button {
+        width: clamp(20rem, 45vw, 45rem);
+}
+
+.footer-section .container {
+    align-items: center;
+}
+
+    .footer-section .container .footer-final-box {
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+
+        .footer-section .container .footer-final-box .social-icons {
+            margin: 1rem 0rem 1rem 0rem;
+        }
+
+        .footer-section .container .footer-final-box p {
+            text-align: center;
+        }
+
 }
