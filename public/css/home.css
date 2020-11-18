@@ -248,7 +248,7 @@ body {
 
 
     .main-services-section .container h2 {
-        font-size: 5.6rem;
+        font-size: clamp(4.0rem, 5vw, 5.6rem);
         font-weight: bold;
         line-height: 6.5rem;
     }
@@ -265,8 +265,8 @@ body {
     }
 
         .main-services-section .container .cards-set .card {
-            width: clamp(22rem, 25vw, 30.5rem);
-            height: clamp(33rem, 36vw, 41.5rem);
+            width: clamp(20rem, 25vw, 30.5rem);
+            height: clamp(30rem, 36vw, 41.5rem);
             display: flex;
             flex-direction: column;
             border: 0.2rem solid #000;
@@ -282,7 +282,7 @@ body {
             }
 
             .main-services-section .container .cards-set .card .card-image img {
-                width: clamp(18rem, 23vw, 24rem);
+                width: clamp(17rem, 20vw, 24rem);
             }
 
             .main-services-section .container .cards-set .card .card-description {
@@ -295,7 +295,7 @@ body {
                 background-color: var(--primary);
                 border-radius: 0px 0px 33px 33px;
 
-                font-size: 2.4rem;
+                font-size: clamp(1.5rem, 2vw, 2.4rem);
                 font-weight: bold;
                 text-align: center;
                 line-height: 2.4rem;
@@ -304,7 +304,7 @@ body {
 .some-projects-section {
     margin-top: 6rem;
     background: url(../images/right-project-image-bg.svg) no-repeat right 4%, url(../images/left-project-image-bg.svg) no-repeat left 88%;
-    background-size: clamp(25rem, 30vw, 51rem);
+    background-size: 52rem;
 }
 
     .some-projects-section .container h2 {
@@ -383,11 +383,11 @@ body {
 
     .send-me-a-message-section .container {
         background: url(../images/contact-form-bg.svg) no-repeat right 60%;
-        background-size: clamp(32.5rem, 35vw, 50rem);
+        background-size: clamp(28rem, 35vw, 50rem);
     }
 
     .send-me-a-message-section .container h2 {
-        font-size: 5rem;
+        font-size: clamp(3.5rem, 5vw, 5.0rem);
         font-weight: bold;
         line-height: 6.5rem;
         margin-bottom: 3rem;
@@ -410,7 +410,7 @@ body {
     .send-me-a-message-section .container form input, 
     .send-me-a-message-section .container form textarea,
     .send-me-a-message-section .container form button {
-        width: 45rem;
+        width: clamp(32rem, 45vw, 45rem);
         height: 5rem;
         font-size: 1.8rem;
         font-weight: 200;
@@ -508,3 +508,53 @@ body {
                 .footer-section .container .footer-final-box .social-icons a:hover {
                     transform: scale(1.20);
                 }
+
+/* Tablet Responsivity Adjustments */
+
+@media only screen and (max-width: 1159px) {
+    .some-projects-section {
+        background: none;
+    }
+        .some-projects-section .container .text {
+            flex-direction: column-reverse;
+            align-items: flex-start;
+        }
+
+        .some-projects-section .container .text:nth-child(even) {
+            flex-direction: column-reverse;
+        }
+
+            .some-projects-section .container .texts .text p {
+                width: 100%;
+                margin: 4rem 0rem 0rem 0rem;
+                text-align: left;
+            }
+
+            .some-projects-section .container .text:nth-child(even) p {
+                margin-left: 0;
+            }
+
+            .some-projects-section .container .text img {
+                width: 100%;
+                position: initial;
+            }
+
+            .some-projects-section .container .text:nth-child(even) img {
+                position: initial;
+            }
+
+            .text:first-child {
+                margin-top: 8rem;
+            }
+
+            .text:last-child {
+                margin-bottom: 0rem;
+            }
+
+            .text + .text {
+                margin-top: 10rem;
+            }
+    .send-me-a-message-section {
+        margin-top: 5rem;
+    }
+}
