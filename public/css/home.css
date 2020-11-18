@@ -15,7 +15,7 @@ body {
     }
 
         .main-menu .container .logo {
-            width: 20rem;
+            width: clamp(15.5rem, 20vw, 20rem);
             display: flex;
             justify-content: space-between;
 
@@ -29,24 +29,24 @@ body {
         }
 
             .main-menu .container img {
-                width: 7.2rem;
+                width: clamp(6.5rem, 7vw, 7.2rem);
             }
 
             .main-menu .container .logo h1 {
-                font-size: 3.6rem;
+                font-size: clamp(2.5rem, 3vw, 3.6rem);
                 font-weight: bold;
                 line-height: 3.6rem;
                 color: inherit;
             }
 
         .main-menu .container .menu-navigation ul {
-            width: 29rem;
+            width: clamp(20rem, 25vw, 29rem);
             display: flex;
             justify-content: space-between;
         }
 
             .main-menu .container .menu-navigation ul li {
-                font-size: 2.3rem;
+                font-size: clamp(1.8rem, 2vw, 2.3rem);
                 font-weight: 700;
 
                 transition: color 200ms linear;
@@ -63,7 +63,7 @@ body {
             }
 
         .main-menu .container .contact-me-btn {
-            width: 23rem;
+            width: clamp(16rem, 20vw, 20rem);
             height: 5rem;
             display: flex;
             justify-content: center;
@@ -89,7 +89,7 @@ body {
 
 .banner-section {
     height: auto;
-    margin: 8rem 0rem;
+    margin: clamp(.5rem, 2.5vw, 8rem) 0rem;
 }
 
     .banner-section .container {
@@ -101,13 +101,13 @@ body {
     }
 
         .banner-section .container header {
-            width: 51rem;
+            width: clamp(30rem, 40vw, 51rem);
         }
 
             .banner-section .container header h1 {
-                font-size: 5.6rem;
+                font-size: clamp(4.0rem, 5vw, 5.6rem);
                 font-weight: bold;
-                line-height: 6.5rem;
+                line-height: clamp(4.9rem, 5.9vw, 6.5rem);
             }
 
                 .banner-section .container header h1 span {
@@ -115,13 +115,13 @@ body {
                 }
 
             .banner-section .container header p {
-                font-size: 4.2rem;
+                font-size: clamp(2.8rem, 3vw, 4.2rem);
                 font-weight: 400;
-                line-height: 5.2rem;
+                line-height: clamp(3rem, 4vw, 5.2rem);
             }
 
             .banner-section .container header a img {
-                width: 25rem;
+                width: clamp(15rem, 20vw, 25rem);
                 margin-top: 3rem;
             }
 
@@ -131,11 +131,11 @@ body {
 
 .readme-section {
     height: auto;
-    margin: 8rem 0rem 2rem 0rem;
+    margin: 12rem 0rem 2rem 0rem;
 }
 
     .readme-section .container {
-        height: 62rem;
+        height: clamp(40rem, 50vw, 62rem);
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -146,7 +146,7 @@ body {
     }
 
         .readme-section .container h2 {
-            font-size: 5.6rem;
+            font-size: clamp(4.0rem, 5vw, 5.6rem);
             font-weight: bold;
             line-height: 6.5rem;
         }
@@ -156,10 +156,10 @@ body {
             }
 
         .readme-section .container p {
-            width: 40rem;
-            font-size: 4.2rem;
+            width: clamp(25rem, 40vw, 51rem);
+            font-size: clamp(2.8rem, 3vw, 4.2rem);
             font-weight: normal;
-            line-height: 5.7rem;
+            line-height: clamp(3rem, 4vw, 5.2rem);
         }
 
 .my-stacks-section {
@@ -198,15 +198,16 @@ body {
         }
 
             .my-stacks-section .container .stacks-section ul li {
-                font-size: 5.6rem;
+                font-size: clamp(3.0rem, 4.5vw, 7.0rem);
                 font-weight: bold;
-                line-height: 7.6rem;
+                line-height: clamp(4rem, 9vw, 7.6rem);
                 margin-right: 5rem;
                 color: white;
             }
 
                 .my-stacks-section .container .stacks-section ul li img {
-                    margin-right: 2.5rem;
+                    margin-right: clamp(.5rem, 1vw, 2.5rem);
+                    width: clamp(1.5rem, 2vw, 2.5rem);
                 }
 
                     .green-elipse {
@@ -230,11 +231,16 @@ body {
             }
 
             .my-stacks-section .container .stacks-caption ul li {
-                font-size: 3.6rem;
+                font-size: clamp(2.0rem, 3.5vw, 3.6rem);
                 font-weight: bold;
                 line-height: 4.9rem;
                 color: white;
             }
+
+                .my-stacks-section .container .stacks-caption ul li img {
+                    margin-right: clamp(.5rem, 1vw, 2.5rem);
+                    width: clamp(1.5rem, 2vw, 2.5rem);
+                }
 
 .main-services-section {
     margin-top: 12rem;
@@ -259,8 +265,8 @@ body {
     }
 
         .main-services-section .container .cards-set .card {
-            width: 30.5rem;
-            height: 41.5rem;
+            width: clamp(22rem, 25vw, 30.5rem);
+            height: clamp(33rem, 36vw, 41.5rem);
             display: flex;
             flex-direction: column;
             border: 0.2rem solid #000;
@@ -273,6 +279,10 @@ body {
                 display: flex;
                 justify-content: center;
                 align-items: center;
+            }
+
+            .main-services-section .container .cards-set .card .card-image img {
+                width: clamp(18rem, 23vw, 24rem);
             }
 
             .main-services-section .container .cards-set .card .card-description {
@@ -294,6 +304,7 @@ body {
 .some-projects-section {
     margin-top: 6rem;
     background: url(../images/right-project-image-bg.svg) no-repeat right 4%, url(../images/left-project-image-bg.svg) no-repeat left 88%;
+    background-size: clamp(25rem, 30vw, 51rem);
 }
 
     .some-projects-section .container h2 {
@@ -332,12 +343,12 @@ body {
 
         .some-projects-section .container .text img {
             position: absolute;
-            right: -10rem;
+            right: clamp(-10rem, -3.7vw, 0rem);
         }
 
         .some-projects-section .container .text:nth-child(even) img {
             position: absolute;
-            left: -10rem;
+            left: clamp(-10rem, -3.7vw, 0rem);
         }
 
         .text:first-child {
@@ -412,8 +423,10 @@ body {
 
     .send-me-a-message-section .container form textarea {
         height: 20rem;
+        padding: 2rem 2.5rem;
         margin-bottom: 3rem;
         resize: none;
+        cursor: initial;
     }
 
     .send-me-a-message-section .container form button {
