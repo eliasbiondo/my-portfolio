@@ -113,7 +113,7 @@ body {
             width: clamp(30rem, 40vw, 51rem);
         }
 
-            .banner-section .container header img {
+            .banner-section .container header > img {
                 display: none;
             }
 
@@ -616,6 +616,8 @@ body {
 
     .mobile-menu {
         display: none;
+        justify-content: center;
+        align-items: center;
         position: fixed;
         z-index: 50;
         width: 100%;
@@ -623,6 +625,27 @@ body {
         background-color: #fff;
         transition: display 1s linear;
     }
+
+        .mobile-menu .menu-navigation ul a li {
+            font-size: clamp(3.5rem, 10vw, 4.5rem);
+            font-weight: 700;
+            text-align: center;
+            transition: color 200ms linear;
+            transition: transform 200ms linear;
+        }
+
+        .mobile-menu .menu-navigation ul a + a li {
+            margin-top: 1.5rem;
+        }
+
+        .mobile-menu .menu-navigation ul li:hover {
+            color: var(--primary);
+            transform: scale(1.20)
+        }
+
+        .mobile-menu .menu-navigation ul li.active {
+            color: var(--primary);
+        }
 
 
 .banner-section {
