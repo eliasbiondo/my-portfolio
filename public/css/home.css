@@ -135,7 +135,8 @@ body {
 
             .banner-section .container header a img {
                 width: clamp(15rem, 20vw, 25rem);
-                margin-top: 3rem;
+                margin-top: 5rem;
+                margin-bottom: 5rem;
             }
 
             .banner-section .container header a img:hover {
