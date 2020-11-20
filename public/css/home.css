@@ -429,6 +429,12 @@ body {
         cursor: pointer;
     }
 
+    .send-me-a-message-section .container form input:focus,
+    .send-me-a-message-section .container form textarea:focus {
+        border: 1px solid var(--primary);
+        box-shadow: 0px 0px 2px var(--primary);
+    }
+
     .send-me-a-message-section .container form input, 
     .send-me-a-message-section .container form textarea,
     .send-me-a-message-section .container form button {
