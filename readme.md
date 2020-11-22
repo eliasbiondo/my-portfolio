@@ -21,7 +21,7 @@ You can see this website layout [clicking here](https://www.figma.com/file/53b6G
  - Main menu: the website's main menu
  - Banner: introduction about me and my services
  - Readme.md: who am I?
- - My Stacks: my skills how computer engineer
+ - My Skills: my skills how computer engineer
  - Main services: my main services
  - Some projects: some apps that I made
  - Send me a message: a simple and flat form to contact me
