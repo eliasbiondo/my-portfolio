@@ -31,7 +31,7 @@ You can see this website layout [clicking here](https://www.figma.com/file/53b6G
 
  - [ ] Preloading screen
  - [ ] Animations on scroll
- - [ ] Contact form config
+ - [X] Contact form config
 
 ## 🇧🇷 Collaborators 
 <table>
